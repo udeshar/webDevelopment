@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+html,body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-nav{
+    height: 70px;
+    display: flex;
+}
+.main-nav .logo-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .menu-item-wrapper{
+    display: flex;
+}
+.main-nav .menu-item-wrapper .sec-m-w{
+    padding: 0px 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main-nav .menu-item-wrapper .active, .main-nav .menu-item-wrapper .sec-m-w:hover{
+    background-color: #0347ab;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-nav .menu-item-wrapper .active .item-p, .main-nav .menu-item-wrapper .sec-m-w:hover .item-p{
+    color: #fff;
+}
+.main-nav .menu-item-wrapper .sec-m-w .drp-menu{
+    background-color: ivory;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+
+}
+.main-nav .menu-item-wrapper .sec-m-w .item-p{
+    margin-bottom: 0px;
+}
+.main-nav .menu-item-wrapper .sec-m-w:hover .drp-menu{
+    display: block;
+    transform: translateY(0px);
+    transition: 1s;
+}
+.main-nav .menu-item-wrapper .sec-m-w .drp-menu{
+    display: none;
+    padding-top: 10px;
+    border-top: 3px solid rgb(224, 175, 15);
+    border-top: 3px solid rgb(224, 175, 15);
+    border-radius: 3px;
+    transform: translateY(-30px);
+}
+.main-nav .menu-item-wrapper .sec-m-w .drp-menu p{
+    border-color: lightcoral;
+    white-space: nowrap;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.884);
+    font-weight: 300;
+}
+/*  */
+
+.main-nav .menu-item-wrapper .sec-m-w .drp-menu p:hover{
+
+    background-color:rgb(0, 255, 149);
+    white-space: nowrap;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.884);
+    font-weight: 300;
+}
+
+/*  */
+.main-nav .logoName{
+    color: rgb(197, 154, 13);
+    font-weight: bold;
+    font-size: 30px;
+}
+.hero{
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-color: indianred;
+    background: url('https://preview.redd.it/c3uhsgo1vx541.jpg?auto=webp&s=a45b583ebf921d3ad1649e77ad05e55226140120');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero .main-wrapper{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero .main-wrapper .satis{
+    color: #fff;
+    /* margin: 30px 0 10px; */
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    transition: 0.5s;
+}
+.hero .main-wrapper .allover{
+    color: #f5b904;
+    font-size: 54px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+}
+.hero .main-wrapper .wehave{
+    color: rgb(72, 70, 219);
+}
+.main-nav .logoimg{
+    height: 30px;
+    width: 30px;
+}
+
+.imageSection{
+    min-height: 110vh;
+}
+.imageSection .imageWrapper{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.img1:hover{
+    opacity: 0.4;
+}
+.tableSection{
+    min-height: 60vh;
+    background-color: rgba(202, 252, 255, 0.336);
+}
+.tableSection table{
+    width: 100%;
+    text-align: left;
+}
+.tableSection table thead{
+    background-color: rgb(159, 248, 248);
+}
+.tableSection table thead tr th:first-child{
+    /* border-radius: 10px; */
+    border-radius: 6px 0px 0px 0px;
+}
+.tableSection table thead tr th:last-child{
+    /* border-radius: 10px; */
+    border-radius: 0px 6px 0px 0px;
+}
+.tableSection table td, .tableSection table th{
+    padding: 6px 0px 6px 25px;
+}
+.tableSection table tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+.tableSection table tbody tr:nth-child(even){
+    background-color: rgb(192, 245, 252);
+}
+.contactSection{
+    min-height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1677000676822-b17874321e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1028px) {
+    .main-nav .menu-item-wrapper{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .hero .main-wrapper{
+        width: 75% !important;
+    }
+}
